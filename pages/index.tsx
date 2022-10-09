@@ -1,4 +1,3 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
@@ -7,17 +6,17 @@ import { Movie } from '../typings'
 import requests from '../utils/requests'
 
 interface Props {
-    netflixOriginals: Movie[]
-    trendingNow: Movie[]
-    topRated: Movie[]
-    actionMovies: Movie[]
-    comedyMovies: Movie[]
-    horrorMovies: Movie[]
-    romanceMovies: Movie[]
-    documentaries: Movie[]
+  netflixOriginals: Movie[]
+  trendingNow: Movie[]
+  topRated: Movie[]
+  actionMovies: Movie[]
+  comedyMovies: Movie[]
+  horrorMovies: Movie[]
+  romanceMovies: Movie[]
+  documentaries: Movie[]
 }
 
-const Home: NextPage = ({
+const Home = ({
   netflixOriginals,
   actionMovies,
   comedyMovies,
@@ -25,7 +24,8 @@ const Home: NextPage = ({
   horrorMovies,
   romanceMovies,
   topRated,
-  trendingNow} : Props) => {
+  trendingNow,
+}: Props) => {
   return (
 
     <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]">
